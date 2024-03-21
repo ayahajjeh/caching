@@ -62,7 +62,7 @@ Using the simulation, I determine the hit rate and miss rate on long-trace.txt f
 ### Conclusions for the Diminishing Returns Question
 The hit and miss rates I got using long-trace.txt file for
 - The direct mapped mode are
--- Hit rate = 0.9575564624323873
+  - Hit rate = 0.9575564624323873
 - Miss rate = 0.04244353756761263
 - The 2-way set associative mode are
 - Hit rate = 0.9747503891379842
