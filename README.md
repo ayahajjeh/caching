@@ -58,3 +58,29 @@ Using the simulation, I determine the hit rate and miss rate on long-trace.txt f
 - 2-way set-associative  
 - 4-way set-associative
 - fully associative
+
+### Conclusions for the Diminishing Returns Question
+The hit and miss rates I got using long-trace.txt file for
+- The direct mapped mode are
+-- Hit rate = 0.9575564624323873
+- Miss rate = 0.04244353756761263
+- The 2-way set associative mode are
+- Hit rate = 0.9747503891379842
+- Miss rate = 0.025249610862015878
+- The 4-way set associative mode are
+- Hit rate = 0.9793254983629259
+- Miss rate = 0.02067450163707411
+- The fully associative mode are
+- Hit rate = 0.9801349747040613
+- Miss rate = 0.019865025295938688
+- Conclusion
+- According to the hit and miss rates we got for these four modes of
+caching, the conventional wisdom is right for this case.
+- The difference in performance between direct mapped and 2-way
+set associative is 0.01719392671
+- The difference in performance between 2-way set associative and
+4-way set associative is 0.004575109225
+- The difference in performance between 4-way set associative and
+fully associative is 0.000809476341
+- Thus, although increases in associativity improves performance,
+the amount of improvement drops off rather quickly.
