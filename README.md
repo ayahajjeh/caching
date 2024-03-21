@@ -74,7 +74,7 @@ The hit and miss rates I got using long-trace.txt file for
   - Hit rate = 0.9801349747040613
   - Miss rate = 0.019865025295938688
 
-* Conclusion
+*Conclusion*
 - According to the hit and miss rates I got for these four modes of
 caching, the conventional wisdom is right for this case.
 - The difference in performance between direct mapped and 2-way
