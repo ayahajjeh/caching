@@ -13,7 +13,7 @@ Read below for more details about the trace files used, code samples, cache para
 ## Trace Files
 I use two trace files:
 
-- sample.txt containing just a few entries.
+- tiny-trace.txt containing just a few entries.
 - long-trace.txt with millions of entries.
 
 Each trace contains a list of byte-by-byte memory accesses: a "D" or "I" (indicating "data" or "instruction fetch") followed by the address in hex. In this project, I ignore the D/I (but in theory, we could use it to simulate a split cache).
