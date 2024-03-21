@@ -1,0 +1,17 @@
+-----------------------------------------------
+cache mode: direct mapped:
+hits:  6076728; misses: 269350; total number of addresses requested: 6346078
+hits rate:  0.9575564624323873; miss rate: 0.04244353756761263
+-----------------------------------------------
+cache mode: 2-way set associative:
+hits:  6185842; misses: 160236; total number of addresses requested: 6346078
+hits rate:  0.9747503891379842; miss rate: 0.025249610862015878
+-----------------------------------------------
+cache mode: 4-way set associative:
+hits:  6214876; misses: 131202; total number of addresses requested: 6346078
+hits rate:  0.9793254983629259; miss rate: 0.02067450163707411
+-----------------------------------------------
+cache mode: fully associative:
+hits:  6220013; misses: 126065; total number of addresses requested: 6346078
+hits rate:  0.9801349747040613; miss rate: 0.019865025295938688
+-----------------------------------------------

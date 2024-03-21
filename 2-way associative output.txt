@@ -1,0 +1,102 @@
+D0000001: addr 0x22222210; looking for tag 0x111111 in set 0x1.
+
+
+State of set 0x1:
+line 0x0 V=0 tag 0x0 last_touched=0
+line 0x1 V=0 tag 0x0 last_touched=0
+
+
+Miss! Found empty line 0x0; adding block there; setting last_touch to 1
+-----------------------------------------------
+D0000002: addr 0x33333310; looking for tag 0x199999 in set 0x11.
+
+
+State of set 0x11:
+line 0x0 V=0 tag 0x0 last_touched=0
+line 0x1 V=0 tag 0x0 last_touched=0
+
+
+Miss! Found empty line 0x0; adding block there; setting last_touch to 2
+-----------------------------------------------
+D0000003: addr 0x44444410; looking for tag 0x222222 in set 0x1.
+
+
+State of set 0x1:
+line 0x0 V=1 tag 0x111111 last_touched=1
+line 0x1 V=0 tag 0x0 last_touched=0
+
+
+Miss! Found empty line 0x1; adding block there; setting last_touch to 3
+-----------------------------------------------
+D0000004: addr 0x55555510; looking for tag 0x2aaaaa in set 0x11.
+
+
+State of set 0x11:
+line 0x0 V=1 tag 0x199999 last_touched=2
+line 0x1 V=0 tag 0x0 last_touched=0
+
+
+Miss! Found empty line 0x1; adding block there; setting last_touch to 4
+-----------------------------------------------
+D0000005: addr 0x66666610; looking for tag 0x333333 in set 0x1.
+
+
+State of set 0x1:
+line 0x0 V=1 tag 0x111111 last_touched=1
+line 0x1 V=1 tag 0x222222 last_touched=3
+
+
+Miss! Evicting line 0x0; adding block there; setting last_touch to 5
+-----------------------------------------------
+D0000006: addr 0x22222210; looking for tag 0x111111 in set 0x1.
+
+
+State of set 0x1:
+line 0x0 V=1 tag 0x333333 last_touched=5
+line 0x1 V=1 tag 0x222222 last_touched=3
+
+
+Miss! Evicting line 0x1; adding block there; setting last_touch to 6
+-----------------------------------------------
+D0000007: addr 0x33333310; looking for tag 0x199999 in set 0x11.
+
+
+State of set 0x11:
+line 0x0 V=1 tag 0x199999 last_touched=2
+line 0x1 V=1 tag 0x2aaaaa last_touched=4
+
+
+Found it in line 0x0.  Hit! Updating last_touch to 7
+-----------------------------------------------
+D0000008: addr 0x8fe01030; looking for tag 0x47f008 in set 0x3.
+
+
+State of set 0x3:
+line 0x0 V=0 tag 0x0 last_touched=0
+line 0x1 V=0 tag 0x0 last_touched=0
+
+
+Miss! Found empty line 0x0; adding block there; setting last_touch to 8
+-----------------------------------------------
+D0000009: addr 0x8fe01031; looking for tag 0x47f008 in set 0x3.
+
+
+State of set 0x3:
+line 0x0 V=1 tag 0x47f008 last_touched=8
+line 0x1 V=0 tag 0x0 last_touched=0
+
+
+Found it in line 0x0.  Hit! Updating last_touch to 9
+-----------------------------------------------
+D00000010: addr 0xbffff8fc; looking for tag 0x5ffffc in set 0xf.
+
+
+State of set 0xf:
+line 0x0 V=0 tag 0x0 last_touched=0
+line 0x1 V=0 tag 0x0 last_touched=0
+
+
+Miss! Found empty line 0x0; adding block there; setting last_touch to 10
+-----------------------------------------------
+-----------------------------------------------
+Hits:  2; misses: 8; addresses: 10
