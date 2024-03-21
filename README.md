@@ -1,7 +1,7 @@
 # Caching
 `This was one of my coding projects for CS51 Computer Architecture class at Dartmouth College.`
 
-In this project, I gain a deeper understanding of caching by exploring and analyzing how it works for real 32-bit X86-family address traces. I use the following four different implementations:
+In this project, I gain a deeper understanding of caching by exploring and analyzing how it works for real 32-bit X86-family address traces. I use the following four approaches to caching, with 64 lines total in the cache:
 
 - direct-mapped
 - 2-way set-associative
@@ -29,6 +29,9 @@ I write a program that reads these trace files and simulate appropriate caching 
 
 I use C as a language to write this program and one reason is because it lets me manipulate the 32-bit addresses to extract things like tags and set indices.
 
+Additionally, in my program, a tagmask is a 32-bit field that, when bitwise-AND'd against the address, leaves just the tag bits and zeros everything else out.
+A setmask is a 32-bit field that, when bitwise-AND'd against the address, leaves just the set bits and zeros everything else out.
+
 ## Cache Parameters
 In this project, each cache line can hold a 16-byte block. And, each cache is unified.
 
@@ -40,5 +43,18 @@ I assume that the caches are all initially empty. For purposes of this project, 
 Again, when simulating caches, I don't keep track of the value of each byte. Rather, for a cache line, I only need to keep track of the metadata: whether the line's valid and, if so, the tag of the block that lives there and when that block was last touched.
 
 ## Simulation Output
+I structure my simulation to take an option to be "verbose" or not. When verbose, for each address, the program prints out
+
+- what set it would be in
+- what tag it would have
+- the state of that set at that point
+- what then happens: hit, miss, eviction, etc.  
 
 ## Diminishing Returns?
+The conventional wisdom says that although increases in associativity improves performance, the amount of improvement drops off rather quickly. I test this convention in our case through the following.
+
+Using the simulation, I determine the hit rate and miss rate on long-trace.txt for these approaches (with 64 lines total in the cache):
+- direct-mapped
+- 2-way set-associative  
+- 4-way set-associative
+- fully associative
