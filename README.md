@@ -63,18 +63,19 @@ Using the simulation, I determine the hit rate and miss rate on long-trace.txt f
 The hit and miss rates I got using long-trace.txt file for
 - The direct mapped mode are
   - Hit rate = 0.9575564624323873
-- Miss rate = 0.04244353756761263
+  - Miss rate = 0.04244353756761263
 - The 2-way set associative mode are
-- Hit rate = 0.9747503891379842
-- Miss rate = 0.025249610862015878
+  - Hit rate = 0.9747503891379842
+  - Miss rate = 0.025249610862015878
 - The 4-way set associative mode are
-- Hit rate = 0.9793254983629259
-- Miss rate = 0.02067450163707411
+  - Hit rate = 0.9793254983629259
+  - Miss rate = 0.02067450163707411
 - The fully associative mode are
-- Hit rate = 0.9801349747040613
-- Miss rate = 0.019865025295938688
-- Conclusion
-- According to the hit and miss rates we got for these four modes of
+  - Hit rate = 0.9801349747040613
+  - Miss rate = 0.019865025295938688
+
+* Conclusion
+- According to the hit and miss rates I got for these four modes of
 caching, the conventional wisdom is right for this case.
 - The difference in performance between direct mapped and 2-way
 set associative is 0.01719392671
