@@ -1,5 +1,5 @@
 # Caching
-`This was one of my coding projects for CS51 Computer Architecture class at Dartmouth College.`
+`This was one of my coding projects for the CS51 Computer Architecture class at Dartmouth College.`
 
 In this project, I gain a deeper understanding of caching by exploring and analyzing how it works for real 32-bit X86-family address traces. I use the following four approaches to caching, with 64 lines total in the cache:
 
